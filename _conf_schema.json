@@ -1,0 +1,45 @@
+{
+  "enabled": {
+    "description": "是否开启定时刷抖音分享",
+    "type": "bool",
+    "default": true
+  },
+  "cron": {
+    "description": "定时表达式（服务器本地时区）。DeepSeek 峰谷(低价)时段为北京时间 00:30-08:30，建议放在这段里。",
+    "type": "string",
+    "default": "0 3 * * *"
+  },
+  "target_umos": {
+    "description": "推送目标 UMO 列表",
+    "type": "list",
+    "default": [],
+    "hint": "格式：<平台实例>:<消息类型>:<会话ID>，例如 snowluma:FriendMessage:1234567"
+  },
+  "candidate_count": {
+    "description": "每轮从抖音取多少条候选",
+    "type": "int",
+    "default": 10
+  },
+  "pick_count": {
+    "description": "最终挑几条推送给你",
+    "type": "int",
+    "default": 3
+  },
+  "provider_id": {
+    "description": "用来写推荐语的大模型 provider_id（留空=用当前默认）",
+    "type": "string",
+    "default": ""
+  },
+  "node_path": {
+    "description": "Node 可执行文件路径",
+    "type": "string",
+    "default": "",
+    "hint": "Node 可执行文件绝对路径；若已在 PATH 中可直接填 node"
+  },
+  "plugin_dir": {
+    "description": "dsh-douyin-scroll 解压目录",
+    "type": "string",
+    "default": "",
+    "hint": "dsh-douyin-scroll 的解压目录（其下应有 tools/mcp-server.mjs 与 data/）"
+  }
+}
