@@ -1,0 +1,6 @@
+name: astrbot_plugin_douyin_daily
+display_name: 抖音每日分享
+desc: 在 DeepSeek 峰谷（低价）时段自动刷一轮抖音，挑几条有趣的连同链接推送给你。基于 NEWJO123/dsh-douyin-scroll 的 MCP server。
+version: v0.1.0
+author: 汤圆定制
+repo: https://github.com/NEWJO123/dsh-douyin-scroll
