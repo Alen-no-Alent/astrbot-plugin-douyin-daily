@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+*.log
+# 上游 MCP 的本地数据：登录态、Cookie、缓存，绝不能提交
+data/
+douyin_cookie.txt
+cookies.json
+*.cookie
